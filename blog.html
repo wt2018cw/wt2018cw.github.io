@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="00007242">
+  <title>Simply Hired</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/all.min.js"></script>
+
+  <!-- Main Css Link -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarright" aria-controls="navbarright" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarright">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link btn-outline-light" href="index.html"><i class="fas fa-search" style="color: #fe8523; margin-right: 8px"></i> Find Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button" href="jobpost.html"><i class="fas fa-suitcase"></i> Post Jobs Free</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-dark" href="#" data-toggle="modal" data-target="#signin"> Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+
+  <section id="showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6 tabs" id="buttons">
+          <h2 class="display-4">Simply Hired Blog</h2>
+          <p>Job Search Advice and Recruiting Tips</p>
+          <button class="button tablinks" onclick="showBlog(event, 'jSearch')">Job Seakers</button>
+          <button class="button tablinks" onclick="showBlog(event, 'Recruit')">Recruiters</button>
+        </div>
+        <div class="col-12 col-md-8 col-lg-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <!-- Job SeakersBlog -->
+      <div id="jSearch" class="tabcontent">
+        <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/NewJobResolution-131x73.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">4 Resolutions for a Better Job</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">September 19, 2018</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/LinkedInBackgroundSummary-131x73.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">How To Improve Your LinkedIn Background Summary</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">September 19, 2018</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/intellegencecareer-131x73.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Intelligence: The No. 1 Predictor of Career Success</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">September 18, 2018</small>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/Overwhelmed-205x121.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">4 Ways to Avoid Feeling Overwhelmed in Your Job Search</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">September 17, 2018</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/confidentjobseeker-205x121.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Confident Job Seekers Find Jobs Quicker and Make More Money</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">September 10, 2018</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/FutureJobs-205x121.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Top 10 Emerging Careers</h5>
+            <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">August 10, 2018</small>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- Recruites Blog -->
+      <div id="Recruit" class="tabcontent">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/New-Grads-Feel-Welcome-131x73.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Six Tips to Make New Grads Feel Welcome</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">October 17, 2018</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/How-to-Leave-a-Good-Impression-with-Rejected-Candidates-131x73.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">How to Leave a Positive Impression With Rejected Candidates</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">September 2, 2018</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/intellegencecareer-131x73.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Intelligence: The No. 1 Predictor of Career Success</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">September 18, 2018</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/CareerChange1-205x121.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Transform Your Recruiting Process Today…For Free</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">September 1, 2018</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/Ethical-Interviewing-that-Works-205x121.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Balancing Act: Ethical Interviewing That Works</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">August 30, 2018</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/Take-Control-of-Employer-Brand-205x121.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Your Message or Theirs? Take Control of Your Employer Brand</h5>
+              <p class="card-text"><a href="#" class="btn btn-primary">Read More ></a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">August 10, 2018</small>
+            </div>
+          </div>
+        </div> 
+      </div>
+       
+    </div>
+  </section>
+
+  <!-- Sign In Box -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agree to Terms and Conditions</label>
+            </div>
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container d-none d-lg-block">
+      <div class="row">
+        <div class="col-3">
+          <img src="img/logo.png" class="d-block" alt="">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            United States
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">United States</a>
+            <a class="dropdown-item" href="#">Canada</a>
+            <a class="dropdown-item" href="#">UK</a>
+            <a class="dropdown-item" href="#">Russia</a>
+            <a class="dropdown-item" href="#">Japan</a>
+          </div>
+        </div>
+        <div class="col-2">
+          <h4>Stay Connected</h4>
+          <ul>
+            <a href="contactus.html"><li>Contact Us</li></a>
+            <a href="blog.html"><li>Simply Hired Blog</li></a>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>Google+</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4>Job Tools</h4>
+          <ul>
+            <a href="localjobs.html"><li>Local Jobs</li></a>
+            <a href="salaryestimator.html"> <li>Salary Estimator</li></a>
+            <a href="jobpost.html"><li>Post Jobs Free</li></a>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4>Browse</h4>
+          <ul>
+            <li>All Jobs</li>
+            <li>All Companies</li>
+            <li>All Cities</li>
+            <li>All Salaries</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Take your job search wherever you go</h4>
+          <a href="#"><img src="img/phone.png" alt="apple store"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container">
+        <div class="text">
+          <p>Made by 00007242</p>
+          <p>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service. This is not an original simplyhired.com website. All the rights of ownership of the content used in this website belong to simplyhired.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript Links -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

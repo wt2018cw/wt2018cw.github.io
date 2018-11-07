@@ -1,0 +1,46 @@
+html, body{
+font-family: 'Source Sans Pro', sans-serif;
+}
+.searchjob{
+  background: url(../img/bg3.jpg) no-repeat;
+  padding: 100px 0;
+}
+.navbar li a{
+  margin: 12px 12px 0 0;
+  font-size: 16px;
+}
+.searchjob .container{
+  width: 500px;
+}
+.searchjob h1{
+  color: #333;
+  font-size: 36px;
+}
+.even{
+  background: #f9f9f9;  
+}
+.content .manage{
+  padding: 0;
+  padding-top: 40px;
+}
+.searchjob .button{
+  background: #fe8523;
+  color:#fff;
+}
+.browse{
+  color: #fff;
+}
+.content .row{
+  width: 100%;
+  margin: 0;
+}
+.content .manage{
+  margin: 0 auto;
+}
+
+@media (max-width: 992px){
+  .searchjob .container{
+    width: 300px;
+    font-size: 12px;
+  }
+}

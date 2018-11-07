@@ -1,0 +1,12 @@
+.center{
+  padding: 120px 0;
+}
+.map{
+  background: #efefef;
+  margin: 0;
+  padding: 0;
+  box-shadow: 5px 5px 30px #555;
+}
+.map-c{
+  padding: 50px;
+}

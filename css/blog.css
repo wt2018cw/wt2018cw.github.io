@@ -1,0 +1,33 @@
+header{
+  border-bottom: 5px solid #333;
+}
+#showcase{
+  padding: 180px 0;
+  background: url(../img/writing-1149962_1920.jpg) no-repeat center right;
+  /* This image is from Pixabay*/
+  background-size: cover;
+}
+#showcase h2{
+  padding-bottom: 30px;
+}
+#showcase h2, #showcase p{
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+.active{
+  background: #fe8523;
+  color: #fff;
+}
+.tabcontent{
+  display: none;
+}
+.blog .container{
+  margin-top: 40px;
+}
+.card-deck{
+  padding-bottom: 20px;
+}
+footer{
+  background: #333;
+  color: #999;
+}

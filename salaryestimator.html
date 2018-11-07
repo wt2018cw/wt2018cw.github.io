@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="00007242">
+  <title>Simply Hired</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/all.min.js"></script>
+
+  <!-- Main Css Link -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarright" aria-controls="navbarright" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarright">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link btn-outline-light" href="index.html"><i class="fas fa-search" style="color: #fe8523; margin-right: 8px"></i> Find Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button" href="jobpost.html"><i class="fas fa-suitcase"></i> Post Jobs Free</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-dark" href="#" data-toggle="modal" data-target="#signin"> Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Job Search Form -->
+  <div class="row" style="background: #f4f4f4; padding: 8px 0; margin: 0">
+  <div class="container">
+    <div class="searchform">
+    <form>
+        <div class="form-row align-items-center">
+          <div class="input-group col-10 col-lg-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Job Title, Skills or Company" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group col-10 col-lg-6">
+              <input type="text" class="form-control" placeholder="City, Statr or Zip" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append" style="width: 140px">
+                <button class="btn btn-outline-secondary" type="button" style="width: 100%">Search</button>
+              </div>
+            </div>
+        </div>
+    </form>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Sign In Box -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agree to Terms and Conditions</label>
+            </div>
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="estimator">
+    <div class="container text-center">
+      <h1>Salary Estimator</h1>
+      <p>Find and compare salary information</p>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Enter Job Title">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Enter Location">
+          </div>
+        </div>
+      </form>
+      <div>
+        <button class="button">View Salary Data</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container d-none d-lg-block">
+      <div class="row">
+        <div class="col-3">
+          <img src="img/logo.png" class="d-block" alt="">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            United States
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">United States</a>
+            <a class="dropdown-item" href="#">Canada</a>
+            <a class="dropdown-item" href="#">UK</a>
+            <a class="dropdown-item" href="#">Russia</a>
+            <a class="dropdown-item" href="#">Japan</a>
+          </div>
+        </div>
+        <div class="col-2">
+          <h4>Stay Connected</h4>
+          <ul>
+            <a href="contactus.html"><li>Contact Us</li></a>
+            <a href="blog.html"><li>Simply Hired Blog</li></a>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>Google+</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4>Job Tools</h4>
+          <ul>
+            <a href="localjobs.html"><li>Local Jobs</li></a>
+            <a href="salaryestimator.html"> <li>Salary Estimator</li></a>
+            <a href="jobpost.html"><li>Post Jobs Free</li></a>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4>Browse</h4>
+          <ul>
+            <li>All Jobs</li>
+            <li>All Companies</li>
+            <li>All Cities</li>
+            <li>All Salaries</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Take your job search wherever you go</h4>
+          <a href="#"><img src="img/phone.png" alt="apple store"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container">
+        <div class="text">
+          <p>Made by 00007242</p>
+          <p>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service. This is not an original simplyhired.com website. All the rights of ownership of the content used in this website belong to simplyhired.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript Links -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

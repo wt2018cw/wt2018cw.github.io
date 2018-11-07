@@ -1,0 +1,185 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+i{
+  padding: 0 5px;
+  color: #fe8523;
+}
+.navbar-brand img{
+  height: 30px;;
+}
+.navbar li a{
+  margin: 12px 12px 0 0;
+  font-size: 14px;
+}
+.button{
+  text-decoration: none;
+  border: 1px solid #fe8523;
+  border-radius: 24px;
+  padding: 10px 40px;
+  text-align: center;
+  color: #fe8523;
+  margin-top: 12px;
+  background: #fff;
+}
+.button:hover{
+  background: #fe8523;
+  color: #fff;
+}
+.btn{
+  border-radius: 24px;
+}
+.content .row{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.even{
+  background: #efefef;
+}
+.content img{
+  max-width: 100%;
+}
+header, header .btn{
+  font-size: 14px;
+}
+.navbar .button, .navbar .btn{
+  max-width: 150px;
+  margin: 12px 12px 0 0;
+}
+
+.searchjob{
+  padding: 200px 0;
+  background:linear-gradient(0deg,#333,#999),url(../img/dffd58209141db1e82ed3da6ae7733ce.jpg) center;
+  background-blend-mode: overlay
+}
+.searchjob form{
+  background: #f4f4f4;
+  padding: 8px;
+  margin-top: 80px;
+  z-index: 1;
+}
+.searchjob form button{
+  width: 100%;
+  background: #fe8523;
+  border-radius: 0;
+  border: #fe8523;
+  padding: auto 30px;
+  color: #fff;
+}
+.input-group-text{
+  background: transparent;
+  color: #fe8523;
+  font-size: 120%;
+}
+.primary-color{
+  color: #fe8523;
+  padding-bottom: 100px;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 582px;
+  z-index: 0;
+ }
+.list{
+  padding: 60px 0;
+}
+.list h3{
+  padding: 10px;
+  color: #8cb3da;
+}
+.browse{
+  background: url(../img/bg2.jpg);
+  padding: 100px 0;
+}
+.browse .col-10{
+  padding: 20px;
+}
+.browse img{
+  width: 100%;
+}
+.browse a label{
+  background: #f4f4f4;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+}
+.estimator, .local{
+  padding: 200px 0;
+  background: url(../img/bgsalary.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.local{
+  background: url(../img/bglocal.png) no-repeat center;
+  background-size: cover;
+}
+.local input{
+  height: 46px;
+}
+.local .button{
+  margin: 0;
+}
+footer{
+  padding-top: 60px;
+}
+footer ul{
+  padding-left: 0;
+}
+footer ul li{
+  list-style-type: none;
+}
+footer img{
+  width: 120px;
+  margin-bottom: 18px;
+}
+footer h4{
+  color: #8cb3da;
+  font-size: 16px;
+}
+.footer-bar{
+  background: #efefef;
+  font-size: 10px;
+  padding: 8px;
+}
+/* ResponsiveNess */
+@media (min-width: 992px){
+  .odd .col-12 div{
+    padding: 60px 100px 60px 0;
+  }
+  .even .col-12 div{
+    padding: 60px 0 60px 100px;
+  }
+}
+@media (max-width: 992px){
+  .searchjob .input-group{
+    margin: 10px auto;
+  }
+  .searchform .input-group{
+    margin: 10px auto;
+  }
+  .estimator, .local{
+    padding: 80px 0;
+  }
+  .searchjob{
+    padding: 100px 0;
+  }
+  .searchjob h1{
+    font-size: 1.6em;
+  }
+  .content img{
+    margin: 18px auto;
+  }
+  .navbar{
+    position: static;
+  }
+  footer{
+    padding: 0;
+  }
+}
