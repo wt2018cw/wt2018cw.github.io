@@ -28,6 +28,7 @@ i{
 .button:hover{
   background: #fe8523;
   color: #fff;
+  cursor: pointer;
 }
 .btn{
   border-radius: 24px;

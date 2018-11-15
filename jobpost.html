@@ -50,7 +50,7 @@
     <div class="container text-center">
       <h1>Post within a network of <span class="primary-color"> 100+ </span>job boards<sup>1</sup> in minutes</h1>
       <p>To quickly hire great employees, you need maximum exposure. By posting within a network of 100+ job boards<sup>1</sup> with one submission, Simply Hired does the work for you, for free<sup>2</sup>.</p>
-      <a href="#" class="button">Post Jobs Free<sup>2</sup></a>
+      <a class="button" data-toggle="modal" data-target="#post">Post Jobs Free<sup>2</sup></a>
     </div>
   </section>
 
@@ -120,7 +120,7 @@
     <div class="row odd">
       <div class="container text-center">
         <h2>See why over <span class="primary-color">3,000,000+ </span> companies have posted jobs with us</h2>
-       <a href="#" class="d-flex justify-content-center"><button class="button d-block">Post Your Job</button></a>
+       <a class="d-flex justify-content-center"><button class="button d-block" data-toggle="modal" data-target="#post">Post Your Job</button></a>
         <img src="img/spiderWebGraphic.png" alt="">
       </div>
     </div>
@@ -130,7 +130,7 @@
   <section class="browse">
     <div class="container text-center">
       <h2>Let's Get Started</h2>
-      <a href="#"><button class="button">Start Hiring</button> </a>
+      <a href="#"><button class="button" data-toggle="modal" data-target="#post">Start Hiring</button> </a>
       <p><sup>1</sup>Distribution may vary depending on demand, industry, sponsorship and other considerations.
           <sup>2</sup>Free job posting offer does not apply to job sites, all staffing agencies or certain other types of jobs at Indeeds discretion. Terms, conditions, quality standards and usage limits apply.</p>
     </div>
@@ -196,10 +196,63 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="post" tabindex="-1" role="dialog" aria-labelledby="postCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="postTitle">POST YOUR JOB FOR FREE</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="postJob">
+            <div class="form-group">
+              <label for="companyName">Company/Organization Name</label>
+              <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Microsoft" required>
+            </div>
+            <div class="form-group">
+              <label for="jobTitle">Job Title</label>
+              <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Web Designer" required>
+            </div>
+            <div class="form-group">
+              <label for="description">Job Description</label>
+              <textarea class="form-control rounded-0" id="description" rows="3" placeholder="Requirement, Skill Set, etc,." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" class="form-control" id="location" name="location" placeholder="Los Angelas, LA" required>
+            </div>
+            <div class="form-group input-group mb-3">
+              <label for="salary" class="col-12" style="padding-left: 0">Salary</label>
+              <div class="input-group-prepend"  style="height: 38px;">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control" id="salary" name="salary" aria-label="Amount (to the nearest dollar)" placeholder="120,000">
+            </div>
+            <div class="form-group">
+              <select class="custom-select" id="time" data-live-search="true">
+                <option>Part-time</option>
+                <option>Full-time</option>
+                <option>Project Completion</option>
+                <option>Remote</option>
+              </select>              
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">  
+          <button type="submit" id="submit" class="button" data-dismiss="modal">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <!-- Javascript Links -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/post.js"></script>
 </body>
 </html>
